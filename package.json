@@ -1,0 +1,15 @@
+{
+	"name": "vittais",
+	"private": true,
+	"scripts": {
+		"dev": "concurrently --names \"BACKEND,FRONTEND\" --prefix-colors \"bgBlue.bold,bgGreen.bold\" \"pnpm --filter backend start:dev\" \"pnpm --filter frontend dev\"",
+		"build": "concurrently --names \"BACKEND,FRONTEND\" --prefix-colors \"bgMagenta.bold,bgYellow.bold\" \"pnpm --filter backend build\" \"pnpm --filter frontend build\""
+	},
+	"devDependencies": {
+		"concurrently": "^9.2.1"
+	},
+	"dependencies": {
+		"class-transformer": "^0.5.1",
+		"class-validator": "^0.14.2"
+	}
+}
