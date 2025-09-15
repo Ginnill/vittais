@@ -19,7 +19,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     const [user, setUser] = useState<User | null>(null);
     // const [error, setError] = useState<string | null>(null);
 
-    const login = (userData: any) => setUser(userData);
+    const login = (userData: User) => setUser(userData);
 
     const logout = () => {
         setUser(null);
